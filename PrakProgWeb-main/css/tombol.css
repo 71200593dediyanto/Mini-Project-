@@ -1,0 +1,127 @@
+#tambahVideo{
+
+  background: rgb(0, 255, 171);
+  border:none;
+  width: 170px;
+  height: 55px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#tambahVideo:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(255, 55, 96,0.5);
+  cursor: pointer;
+}
+
+
+#deleteVideo{
+  background: 	#ff1e4c;
+  border:none;
+  color:white;
+  position: relative;
+  top:0px;
+  width: 170px;
+  height: 55px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#deleteVideo:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(0, 255, 170, 0.736);
+  cursor: pointer;
+}
+
+#editVideo{
+  float: right;
+  position: relative;
+  bottom:65px;
+  right : 30px;
+
+}
+
+a{
+  text-decoration:none;
+}
+
+.crudKategori{
+  position: relative;
+  margin:50px 0px 0px 0px;
+  display:flex;
+  justify-content:right;
+}
+
+#bttn-tambah{
+  background: rgb(0, 255, 171);
+  border:none;
+  width: 200px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#bttn-delete{
+  background: #ff1e4c;
+  color: white;
+  border:none;
+  width: 200px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#bttn-update{
+  background: #FF06B7;
+  border:none;
+  color: white;
+  width: 200px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#bttn-tambah:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(255, 55, 96,1);
+  cursor: pointer;
+}
+
+#bttn-delete:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(0, 255, 170, 1);
+  cursor: pointer;
+}
+
+#bttn-update:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(255, 228, 89,1);
+  cursor: pointer;
+}

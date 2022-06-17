@@ -1,0 +1,778 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+    font-weight: regular;
+    background: linear-gradient(90deg, #c7c5f4, #776bcc);
+}
+
+.signinout {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    bottom: 7px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.signinout a:hover {
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.signinout i {
+    position: relative;
+    top: 5px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.signinout a {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-center {
+    position: relative;
+    top: 7px;
+}
+
+.logoimage {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #614385;
+    border-bottom: 1px solid #614385;
+    justify-content: space-between;
+    display: flex;
+    position: sticky;
+    min-width: 100%;
+    top: 0;
+    font-family: "Lilita One", cursive;
+    align-items: center;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    bottom: 4.7px;
+    padding-left: 280px;
+    padding-right: 0px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #89a6fb;
+    text-align: center;
+    padding: 8px 16px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.topnav .header-center a::after {
+    content: "";
+    width: 0%;
+    height: 6px;
+    background: #e84855;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+#imgPelatih {
+    margin-top: 10px;
+    position: relative;
+    top: 0px;
+    bottom: 40px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color: white;
+}
+
+.topnav .header-center a:hover::after {
+    width: 100%;
+    background: #4895ef;
+    transition: 1s;
+}
+
+.topnav .header-center a.active:hover::after {
+    width: 0%;
+}
+
+.topnav .header-center a.logolink:hover::after {
+    width: 0%;
+}
+
+.topnav .header-center a.active {
+    color: white;
+}
+
+#image-Kategori {
+    width: 450px;
+    height: 350px;
+    margin: 20px 30px 20px 20px;
+}
+
+.topnav input[type="search"] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 0.9;
+    pointer-events: all;
+}
+
+.topnav .search-container button {
+    padding: 11px 15px;
+    margin-top: -10px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 150%;
+    margin-bottom: 10px;
+    color: #08090a;
+    position: relative;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 400px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type="text"],
+    .topnav .search-container button {
+        float: none;
+        display: flex;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 3px;
+    }
+
+    .topnav input[type="text"] {
+        border: 1px solid #ccc;
+    }
+}
+
+section {
+    display: flex;
+}
+
+.menu-card {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 15px 10px 10px;
+    margin: 50px 15px 10px 35px;
+    background-color: aliceblue;
+    max-width: 450px;
+    height: auto;
+    position: relative;
+    transition: 0.7s;
+    border-radius: 35px;
+}
+
+.menu-card:hover {
+    box-shadow: 0px 20px 25px 0 rgba(0, 0, 0, 0.3),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+}
+
+.menu-card a img {
+    width: 450px;
+    height: 255px;
+    object-fit: contain;
+    display: block;
+    margin-left: -10px;
+    margin-right: auto;
+}
+
+.menu-card a {
+    text-decoration: none;
+    color: #286b8d;
+    font-weight: bolder;
+}
+
+.menu-title {
+    font-size: 30px;
+    transition: 0.6s;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+    background-color: #bbdef0;
+    opacity: 0;
+    border-radius: 35px;
+}
+
+.overlay span {
+    position: relative;
+    text-align: center;
+    min-height: 100%;
+    left: 30%;
+    top: 40%;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #08090a;
+}
+
+.menu-card:hover .overlay {
+    opacity: 0.7;
+    border-radius: 35px;
+}
+
+.menu-card:hover .menu-title {
+    opacity: 0;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+/* CSS HOME */
+a.main-button-slider {
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    margin-left: 10px;
+    background: linear-gradient(120deg, rgba(52, 221, 135, 0) 0%, #2bd675 100%);
+    background-color: #2bd675;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.main-button-slider:hover {
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.welcome-area .header-text h1 {
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 80px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.welcome-area .header-text h1 em {
+    font-style: normal;
+    color: #286b8d;
+}
+
+.welcome-area .header-text p {
+    font-weight: 300;
+    font-size: 17px;
+    color: #08090a !important;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 40px;
+}
+
+.welcome-area {
+    padding-left: 40px;
+}
+
+.welcome-paragraph {
+    position: relative;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.homeimg {
+    position: relative;
+    left: 730px;
+    bottom: 250px;
+}
+
+.homeimg img {
+    width: 350px;
+    height: 500px;
+}
+
+.deskripsi-home {
+    width: 550px;
+}
+
+.content-left {
+    position: relative;
+    text-align: justify;
+    top: 100px;
+}
+
+#before1 {
+    background: url("homeimage/resize3.jpg") no-repeat;
+    background-size: cover;
+}
+
+#button2:hover+.homeimg>#before1 {
+    background: url("homeimage/after1.jpg") no-repeat;
+    background-size: cover;
+}
+
+#before2 {
+    background: url("homeimage/before2-resize.jpg") no-repeat;
+    background-size: cover;
+}
+
+#button2:hover+.homeimg>#before2 {
+    background: url("homeimage/after2-resize.jpg") no-repeat;
+    background-size: cover;
+}
+
+#button1:hover+#button2+.homeimg>#before1 {
+    background: url("homeimage/after1.jpg") no-repeat;
+    background-size: cover;
+}
+
+#button1:hover+#button2+.homeimg>#before2 {
+    background: url("homeimage/after2-resize.jpg") no-repeat;
+    background-size: cover;
+}
+
+.detail {
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    background: white;
+    margin: 0px 15px 45px 20px;
+    padding-right: 20px;
+}
+
+.penjelasan {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.penjelasan p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.penjelasan h2 {
+    font-size: 28px;
+}
+
+.detail-body {
+    background-image: linear-gradient(20deg, #f2b9f7 10%, #e0e0ff 80%);
+}
+
+.solid {
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.cardio-line {
+    height: 12px;
+}
+
+.Video {
+    margin-left: 20px;
+}
+
+.Video img {
+    width: 429px;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: fill;
+}
+
+.video-card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.durasi {
+    float: right;
+    position: relative;
+    bottom: 0px;
+    top: 20px;
+}
+
+.fa-eye {
+    margin-right: 5px;
+    position: relative;
+    bottom: 1.2px;
+}
+
+.views {
+    position: relative;
+    float: left;
+    bottom: 0px;
+    top: 40px;
+    font-size: 1.17em;
+}
+
+.video-card:hover .overlay {
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+#video-overlay {
+    border-radius: 15px;
+    transition: 0.6s ease-in-out;
+}
+
+#video-overlay span {
+    left: 26%;
+    top: 45%;
+}
+
+.video-card:hover p {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.video-card:hover h3,
+.video-card:hover .menu-title,
+.video-card:hover .views {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.Video .solid {
+    border-bottom: 5px solid rgb(255, 100, 160);
+    position: relative;
+    width: 230px;
+    bottom: 15px;
+}
+
+.video-card {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 15px 10px 10px;
+    margin: 20px 15px 10px 10px;
+    background-color: aliceblue;
+    position: relative;
+    max-width: 450px;
+    height: auto;
+    transition: 0.7s;
+    border-radius: 15px;
+}
+
+.video-card:hover {
+    box-shadow: 0px 20px 25px 0 rgba(0, 0, 0, 0.3),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+}
+
+.video-nav {
+    display: flex;
+    margin-top: 15px;
+}
+
+/* CSS UNTUK FOOTER */
+footer {
+    background: #614385;
+    position: relative;
+    margin-top: max(100px);
+    height: 200px;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: max(230px);
+}
+
+.footermedia {
+    float: right;
+    padding: 0 50px 0px;
+    position: relative;
+    bottom: 80px;
+    font-size: 17px;
+}
+
+.term {
+    text-align: center;
+    position: relative;
+    top: 45px;
+    font-size: 17px;
+    left: -120px;
+}
+
+.term a {
+    text-decoration: none;
+    color: white;
+    /* display: block; */
+}
+
+.term a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
+.term a span {
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.copyright {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-top: 500px;
+    position: relative;
+    top: 70px;
+    padding-left: 360px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.copyright span:nth-child(2) {
+    color: #89a6fb;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    top: 10px;
+    font-size: 22px;
+}
+
+.logo img {
+    width: 250px;
+    height: 80px;
+}
+
+.logo p {
+    position: relative;
+    top: -15px;
+    padding-left: 15px;
+}
+
+.footermedia .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%);
+    color: white;
+}
+
+/* CSS UNTUK DETAIL VIDEO */
+iframe {
+    width: 1100px;
+    height: 450px;
+    size-adjust: 150%;
+    position: relative;
+    flex: 1;
+    min-height: 100%;
+    margin: 0;
+}
+
+.deskripsi-video {
+    position: relative;
+    background: radial-gradient(circle at top left, #4a42ec 0%, #521d91 100%);
+    background-color: #521d91;
+    color: #fff;
+    height: auto;
+    flex: 1;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 80px 30px 20px 50px;
+}
+
+.isi-content {
+    font-weight: 800;
+    color: #4dff96;
+    letter-spacing: 0.5px;
+}
+
+dt,
+p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.deskripsi-video dt a:link {
+    text-decoration: none;
+}
+
+.deskripsi-video dt a:visited {
+    text-decoration: none;
+}
+
+.deskripsi-video dt a:hover {
+    text-decoration: underline;
+}
+
+.deskripsi-video p {
+    position: relative;
+    bottom: 0px;
+    margin-top: min(120px);
+    float: left;
+}
+
+.content-cardio {
+    margin: 20px 15px 20px 15px;
+    background-color: white;
+    max-height: 800px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.edit-button {
+    color: #fff;
+    background: linear-gradient(120deg, rgba(52, 221, 135, 0) 0%, #ff06b7 100%);
+    background-color: #ff06b7;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    bottom: 50px;
+    height: 30px;
+    border-radius: 100px;
+    padding: 18px 25px 40px 25px;
+    transition: 0.5s;
+}
+
+.edit-button:hover {
+    transition: 0.5s;
+    transform: scale(1.04);
+}
+
+.back-button {
+    color: #fff;
+    background: linear-gradient(120deg, rgba(52, 221, 135, 0) 0%, #2bd675 100%);
+    background-color: #2bd675;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    bottom: 50px;
+    height: 30px;
+    border-radius: 100px;
+    padding: 18px 25px 40px 25px;
+    transition: 0.5s;
+}
+
+.back-button:hover {
+    transition: 0.5s;
+    transform: scale(1.04);
+}
+
+.back-button b {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.back-button i {
+    padding-right: 5px;
+}
+
+.edit-button b {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.edit-button i {
+    padding-right: 5px;
+}
+
+.penjelasan-video {
+    font-weight: normal;
+    font-size: 16.5px;
+}
+
+.video-detail {
+    padding: 3px 10px 20px 20px;
+}

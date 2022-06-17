@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+
+
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);	
+    font-family: 'Fredoka', sans-serif;	
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    padding-top:20px;
+}
+
+.DetailKategori-label button{
+    position: relative;
+    left:600px;
+    width:150px;
+    height:50px;
+    font-size: 22px;
+    background: rgb(0, 255, 171);
+    border:none;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.DetailKategori-label button:hover{
+    transition: 0.5s;
+    transform: scale(1.04);
+    box-shadow: 5px 5px rgba(255, 55, 96,0.5);
+    cursor: pointer;
+}
+
+.Kategori-image{
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.DetailKategori-label{
+    position: relative;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+
+.DetailKategori-label label{
+    margin-left:30px;
+    cursor: text;
+}
+
+.DetailKategori-label input,select{
+    width: 740px;
+    height: 30px;
+    margin: 10px 30px 10px 30px;
+    cursor: text;
+}
+
+.DetailKategori-label textarea{
+    width: 740px;
+    margin: 10px 30px 10px 30px;
+    padding:0px;
+    cursor: text;
+}
+
+
+#input-form {
+    position: relative;
+    margin : 40px;
+    height : 100%;
+    width : 800px;
+    background-color: white ;
+    box-shadow: 1px 0px 8px 9px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 0px 8px 9px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 0px 8px 9px rgba(0,0,0,0.15);
+    left:300px;
+}
+
+
+.form-element{
+    padding: 50px 0px 0px 50px;
+
+}
+
+.form-element input {
+    display:none;
+    cursor: text;
+}
+
+
+.form-element img{
+    width:650px;
+    height:300px;
+    object-fit:cover;
+    cursor: pointer;
+    
+}
+
+#file-preview div{
+    position:relative;
+    width:450px;
+    bottom:304px;
+    text-align:center;
+    line-height:40px;
+    font-size:13px;
+    color:#f5f5f5;
+    font-weight:600;
+}
+
+#file-preview p{
+    position: absolute;
+    font-size: 18px;
+    top:250px;
+    background:rgba(0,0,0,0.15);
+    width:650px;
+    height:50px;
+    text-align:center;
+    padding-top: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#file-preview div:hover > p{
+    height: 300px;
+    top:0px;
+    transition-timing-function: ease;
+    color:black;
+
+}
+
+
+#file-preview{
+    margin:0px;
+    padding:0px;
+    position: relative;
+    max-height:1110px;
+}
+
+.form-element button{
+    position: relative;
+    bottom:1px;
+    width:450px;
+    display: none;
+    cursor: pointer;
+}

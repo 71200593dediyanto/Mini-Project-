@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;	
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', sans-serif;	
+  font-weight: regular;
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
+}
+
+.detail{
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    background: white;
+    margin :0px 15px 45px 20px;
+    padding-right: 20px;
+  }
+  
+  .penjelasan{
+    text-align: justify;
+    margin-top: 20px;
+  }
+  
+  .penjelasan p{
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  .penjelasan h2{
+    font-size: 28px;
+  }
+  
+  
+  .detail-body{
+    background-image: linear-gradient( 20deg, #f2b9f7 10%, #e0e0ff 80%);
+  }
+  
+  .solid{
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+  }
+  
+  .cardio-line{
+    height:12px;
+  }
+  
+  .Video{
+    margin-left: 20px;
+  }
+  
+  img{
+    width: 429px;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit:fill;
+  }
+
+  
+  .durasi{
+    float: right;
+    position:relative;
+    bottom: 0px;
+    top: 35px;
+  }
+  
+  .fa-eye{
+    margin-right: 5px;
+    position: relative;
+    bottom: 1.2px;
+  }
+  
+  .views{
+    position: absolute;
+    float: left;
+    bottom: 0px;
+    top: 380px;
+    font-size:1.17em;
+    font-weight: bold;
+  }
+  
+  .Video .solid{
+    border-bottom:5px solid rgb(255, 100, 160);
+    position: relative;
+    width:230px;
+    bottom:15px;
+  
+  }
+  
+  
+  .video-card{
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding : 15px 15px 10px 10px;
+    margin : 20px 15px 10px 10px;
+    background-color: aliceblue;
+    position: relative;
+    max-width:450px;
+    height:500px;
+    transition: 0.7s;
+    border-radius: 15px;
+  }
+
+  .video-nav{
+    display: flex;
+    margin-top:30px;
+    margin-left: 40px;
+  }
+
+
+  #delete{
+      position:relative;
+      font-size:18px;
+      font-weight: bold;
+      top:120px;
+      left:180px;
+      display: inline-block;
+      color:red;
+      cursor: text;
+  }
+
+  input{
+      position: relative;
+      float:right;
+      height:30px;
+      width:30px;
+      top:115px;
+      left:110px;
+      cursor: pointer;
+  }
+
+  #submit{
+    position:absolute;
+    top:0px;
+    left:220px;
+    width:200px;
+    height:90px;
+    margin:20px 0px 0px 53px;
+    background: 	#ff1e4c;
+    border:none;
+    color:white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
+
+  #submit:hover{
+    transition: 0.5s;
+    transform: scale(1.04);
+    box-shadow: 5px 5px rgba(0, 255, 170, 0.736);
+  }
+
+  a #back {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color:#08090A;
+    cursor: pointer;
+  }
+
+  #back{
+    width:200px;
+    height:90px;
+    margin:20px 30px 0px 53px;
+    background: 	rgb(0, 255, 171);
+    border:none;
+    border-radius: 15px;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #back:hover{
+    transition: 0.5s;
+    transform: scale(1.04);
+    box-shadow: 5px 5px rgba(255, 55, 96,0.5);
+    cursor: pointer;
+  }

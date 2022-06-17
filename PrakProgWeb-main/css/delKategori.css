@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;	
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: regular;
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
+  
+}
+
+section{
+    display: flex;
+  }
+  
+  .menu-card{
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding : 15px 15px 10px 10px;
+    margin : 50px 15px 10px 35px;
+    background-color: aliceblue;
+    max-width:450px;
+    height:auto;
+    position: relative;
+    transition: 0.7s;
+    border-radius: 35px;
+  }
+  
+  .menu-card img{
+    width: 450px;
+    height: 255px;
+    object-fit: contain;
+    display:block;
+    margin-left: -10px;
+    margin-right: auto;
+    
+  }
+  
+  
+  .menu-title{
+    font-size: 30px;
+    transition:0.6s;
+    
+  }
+  .menu-title{
+    text-align: center;
+  }
+
+  #delete{
+    font-size:18px;
+    font-weight: bold;
+    color:red;
+}
+
+input{
+    position:relative;
+    top:10px;
+    height:30px;
+    width:30px;
+    cursor: pointer;
+}
+
+#submit{
+  position:absolute;
+  top:0px;
+  left:220px;
+  width:200px;
+  height:90px;
+  margin:20px 0px 0px 53px;
+  background: 	#ff1e4c;
+  border:none;
+  color:white;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+#submit:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(0, 255, 170, 0.736);
+  cursor: pointer;
+}
+
+a #back{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color:#08090A;
+  cursor: pointer;
+}
+
+#back{
+  width:200px;
+  height:90px;
+  margin:20px 30px 0px 53px;
+  background: 	rgb(0, 255, 171);
+  border:none;
+  border-radius: 15px;
+  transition: 0.5s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#back:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(255, 55, 96,0.5);
+  cursor: pointer;
+}
+
+#update{
+  background: #FF06B7;
+  border:none;
+  color: white;
+  width: 200px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#update:hover{
+  transition: 0.5s;
+  transform: scale(1.04);
+  box-shadow: 5px 5px rgba(255, 228, 89,1);
+  cursor: pointer;
+}
